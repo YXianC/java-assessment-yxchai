@@ -32,10 +32,5 @@ mvn spring-boot:run
 - All requests/responses are logged (see `./logs/javaassessmmentAppLog.log`).
 - `@Transactional` is used in service methods for insert/update/get.
 ```
-
-
----
-
-
 ## Tips & Next steps
 - If your MSSQL uses different port or credentials, update `application.yml`.
