@@ -1,0 +1,5 @@
+-- Init TESTDB schema
+IF NOT EXISTS ( SELECT * FROM sys.schemas WHERE name = 'TESTDB' )
+BEGIN
+    EXEC('CREATE SCHEMA [TESTDB]');
+END
