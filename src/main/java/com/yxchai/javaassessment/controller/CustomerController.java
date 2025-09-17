@@ -2,7 +2,6 @@ package com.yxchai.javaassessment.controller;
 
 import com.yxchai.javaassessment.dto.CustomerDto;
 import com.yxchai.javaassessment.service.CustomerService;
-import com.yxchai.javaassessment.service.impl.CustomerServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +21,7 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @RequestMapping("/add")
+    @PostMapping("/add")
     public ResponseEntity<CustomerDto> addCustomer(@RequestBody CustomerDto customerDto) {
         log.info("CustomerController.addCustomer()");
         CustomerDto responseCustomerDto = customerService.createCustomer(customerDto);
