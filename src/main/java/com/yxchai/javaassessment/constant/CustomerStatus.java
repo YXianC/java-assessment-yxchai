@@ -1,12 +1,9 @@
 package com.yxchai.javaassessment.constant;
 
-import lombok.Data;
-
 public enum CustomerStatus {
     CUSTOMER_CREATED ("Customer Created"),
     CUSTOMER_UPDATED ("Customer Updated"),
-    CUSTOMER_CREATE_FAILED ("Customer Create Failed"),
-    CUSTOMER_UPDATE_FAILED ("Customer Update Failed");
+    FAILED ("FAILED");
 
     private final String text;
 
